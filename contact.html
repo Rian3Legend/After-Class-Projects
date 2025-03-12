@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Contact Section */
+        .contact {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #1e1e1e;
+            margin-top: 60px; /* To account for the fixed navbar */
+        }
+
+        .contact h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #00c3ff;
+        }
+
+        .contact p {
+            font-size: 18px;
+            color: #b0b0b0;
+            margin-bottom: 30px;
+        }
+
+        .email-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .email-item {
+            background-color: #121212;
+            padding: 15px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .email-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .email-item a {
+            color: #00c3ff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        .email-item a:hover {
+            color: #ff00ff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact h2 {
+                font-size: 28px;
+            }
+
+            .contact p {
+                font-size: 16px;
+            }
+
+            .email-item a {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="logo">Rian Web</a>
+        <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+        <div class="nav-links" id="navLinks">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="navbar.html">Slides</a>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me via email. I'll get back to you as soon as possible!</p>
+        <div class="email-list">
+            <div class="email-item">
+                <a href="mailto:hasinyameenr@gmail.com">hasinyameenr@gmail.com</a>
+            </div>
+            <div class="email-item">
+                <a href="mailto:rian3legend@gmail.com">rian3legend@gmail.com</a>
+            </div>
+            <div class="email-item">
+                <a href="mailto:hasinyameenrian@hotmail.com">hasinyameenrian@hotmail.com</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2025 All Right Reserved By Hasin
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById("navLinks");
+            nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+        }
+    </script>
+</body>
+</html>

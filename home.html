@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rian Web</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Hero Section */
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1485470733090-0aae1788d5af?q=80&w=1517&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Darker background image */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-top: 60px; /* To account for the fixed navbar */
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Add shadow to text for better visibility */
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Add shadow to text for better visibility */
+        }
+
+        .hero .btn {
+            padding: 10px 20px;
+            background-color: #00c3ff;
+            color: #121212;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero .btn:hover {
+            background-color: #ff00ff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="logo">Rian Web</a>
+        <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+        <div class="nav-links" id="navLinks">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="navbar.html">Slides</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h1>Welcome to Rian Web</h1>
+            <p>A showcase of web development skills</p>
+            <a href="navbar.html" class="btn">Explore More</a> <!-- Link to navbar.html -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2025 All Right Reserved By Hasin
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById("navLinks");
+            nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+        }
+    </script>
+</body>
+</html>
